@@ -6,7 +6,6 @@ from bson.objectid import ObjectId
 user_blueprint = Blueprint('users', __name__, url_prefix='/users')
 
 @user_blueprint.route('/', methods=('GET', 'POST'))
-
 def index():
     if request.method == 'GET':
         return 'Hello World'
